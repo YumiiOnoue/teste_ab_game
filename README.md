@@ -20,18 +20,18 @@ A atribuição do jogador entre o gate_30 e gate_40 foi de 50% para 50%.
 
 
 ## Testes
-**Para número de rodadas jogadas (sum_gamerounds)**
+### Para número de rodadas jogadas (sum_gamerounds)
 
-Foi utilizado o Teste t:
+Foi utilizado o **Teste t**
 
 * Estatística t: -0.3468
 * Valor-p: 0.7287
 
 Não houve diferença significativa no número médio de rodadas jogadas entre os grupos (p > 0.05).
 
-**Para retenção no 1º e 7º dia (retention_1 e retention_7)**
+### Para retenção no 1º e 7º dia (retention_1 e retention_7)
 
-Foi utilizado o Teste Qui-Quadrado
+Foi utilizado o **Teste Qui-Quadrado**
 
 Para retenção no 1º dia:
 * Estatística χ²: 2.7469
