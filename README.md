@@ -1,6 +1,6 @@
 # Teste A/B na retenção em jogos de celular
 
-Para verificar o desempenho do jogo Cookie Cats da Tactile Entertainment, utilizei o teste A/B na métrica de retenção do jogador. Este conjunto de dados inclui resultados de 90.189 jogadores para examinar o que acontece quando o primeiro gate do jogo é movido do nível 30 para o nível 40. Ao instala o jogo, o jogador é aleatoriamente atribuído ao grupo gate_30 ou gate_40.
+Para verificar o desempenho do jogo Cookie Cats da Tactile Entertainment, utilizei o teste A/B na métrica de retenção do jogador. Este conjunto de dados inclui resultados de 90.189 jogadores para examinar o que acontece quando o primeiro gate do jogo é movido do nível 30 para o nível 40. Ao instalar o jogo, o jogador é aleatoriamente atribuído ao grupo gate_30 ou gate_40.
 Para conferir os dados acesse: [Kaggle](https://www.kaggle.com/datasets/mursideyarkin/mobile-games-ab-testing-cookie-cats/data).
 
 ## Banco de dados
@@ -37,7 +37,7 @@ Para verificar a diferença entre gate_30 e gate_40 em relação ao número de r
 - Estatística t: -0.3468
 - Valor-p: 0.7287
 
-Com esses resultados temos que não há evidência estatística de que os grupos tenham médias diferentes no número de rodadas jogadas. Portanto, não há evidência estatística suficiente para rejeitar a hipótese nula, indicando que a diferença observada não é estatisticamente significativa. Em relação ao valor negativo do teste t, o resultado representa que, depois de remover os outliers, o grupo gate_30 teve uma média de rodadas ligeiramente maior do que o grupo gate_40.
+Com esses resultados, não há evidência estatística de que os grupos tenham médias diferentes no número de rodadas jogadas. Portanto, não há evidência estatística suficiente para rejeitar a hipótese nula, indicando que a diferença observada não é estatisticamente significativa. Em termos práticos, isso sugere que a mudança do gate do nível 30 para o nível 40 não teve um impacto significativo no número médio de rodadas jogadas pelos usuários. Em relação ao valor negativo do teste t (-0.3468), o resultado representa que, depois de remover os outliers, o grupo gate_30 teve uma média de rodadas ligeiramente maior do que o grupo gate_40, mas essa diferença não é estatisticamente relevante.
 
 ### Retenção no 1º e 7º dia (retention_1 e retention_7)
 
@@ -60,3 +60,7 @@ Isso significa que a retenção no 7º dia foi impactada pela versão do jogo qu
 ## Conclusões
 
 Com base nos resultados, a retenção de longo prazo (7 dias) foi significativamente maior em um dos grupos, indicando que a posição do gate afeta o engajamento dos jogadores ao longo do tempo. Já a retenção de curto prazo (1 dia) e o número de rodadas jogadas não apresentaram diferença significativa. Assim, recomenda-se considerar o impacto positivo do gate na retenção de longo prazo.
+
+## Próximos passos
+- Investigar as razões por trás da baixa retenção de jogadores que instalaram, mas não jogaram (sum_gamerounds)
+- Realizar novos testes A/B com diferentes posições de gate ou outras modificações no jogo para otimizar ainda mais a retenção de 7 dias
